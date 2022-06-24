@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-dark">
+    <!-- navbar -->
+
+    <header>
+        <div class="leftMenu bg-dark p-3 d-flex align-content-between flex-wrap">
+            <div class="nav-item">
+                <ul>
+                    <li>
+                        <a href="#" movie-title="now_playing">Now playing</a>
+                    </li>
+                    <li>
+                        <a href="#" movie-title="popular">Popular</a>
+                    </li>
+                    <li>
+                        <a href="#" movie-title="top_rated">Top Rated</a>
+                    </li>
+                    <li>
+                        <a href="#" movie-title="upcoming">Upcoming</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-item mt-5 ml-4 ">
+                <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="me-3"><i class="fas fa-globe"></i></a>
+                <p class="text-white mt-4">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="rightMenu bg-white d-flex align-content-between justify-content-center flex-wrap p-2">
+            <img src="images/logo.png" class="">
+            <i id="triggle" class="open" aria-hidden="true"></i>
+            <div class="icons">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                <i class="fas fa-globe"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Movies Section -->
+    <section class="movies p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <input class="form-control bg-dark" id=searchByWord placeholder="Get Movies By Word....">
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control bg-dark" id="search" placeholder="Search....">
+                </div>
+            </div>
+            <div class="row my-5" id="searchResult">
+
+            </div>
+            <div class="row my-5" id="movies-container">
+                <!-- the code from API -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact p-5">
+        <div class="container p-3">
+            <h2 class="text-white">Contact Us</h2>
+            <div class="row p-3">
+                <div class="col-md-6">
+                    <input class="form-control bg-dark" id="name" placeholder="Enter your Name">
+                    <div class="alert alert-danger d-none"></div>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control bg-dark" id="email" placeholder="Enter Email">
+                    <div class="alert alert-danger d-none"></div>
+                </div>
+            </div>
+            <div class="row p-3">
+                <div class="col-md-6">
+                    <input class="form-control bg-dark " id="phone" placeholder="Enter Phone">
+                    <div class="alert alert-danger d-none"></div>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control bg-dark" id="age" placeholder="Enter Age">
+                    <div class="alert alert-danger d-none"></div>
+                </div>
+            </div>
+            <div class="row p-3">
+                <div class="col-md-6">
+                    <input class="form-control bg-dark " id="password" placeholder="Enter Password">
+                    <div class="alert alert-danger d-none"></div>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control bg-dark" id="repassword" placeholder="Enter Repassword">
+                    <div class="alert alert-danger d-none"></div>
+                </div>
+            </div>
+            <div class="row p-3">
+                <div class="col-md-6">
+                    <button class="btn btn-outline-danger">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
